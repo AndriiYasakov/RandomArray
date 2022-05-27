@@ -3,13 +3,14 @@ package com.itvdn.javaStarter.randomArray;
 public class Start {
     public static void main(String[] args) {
         RandomArray arr = new RandomArray();
-        PrinterArray print = new PrinterArray();
-        int [] ddd = new int[15];
-        arr.arraysNew(ddd);
-        print.printArray(ddd);
-        print.printArrayReverse(ddd);
+        ArrayUtils utils = new ArrayUtils();
+//        int [] ddd = new int[15];
+//        arr.arraysNew(ddd);
+//        utils.printArray(ddd);
+//        utils.printArrayReverse(ddd);
         arr.arraysNew();
-        print.printArray(arr.getRandomArray());
-        print.printArrayReverse(arr.getRandomArray());
+        utils.printArray(arr.getRandomArray());
+        utils.printArrayReverse(arr.getRandomArray());
+        utils.sortArray(arr.getRandomArray());
     }
 }
